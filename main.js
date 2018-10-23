@@ -100,3 +100,18 @@ function start() {
 }// Fin fonction start
 
 /* ------------------------------------------------------- MISSILE ------------------------------------------------- */
+var missile = document.getElementById("missile");
+document.addEventListener("keydown", keyPressMissile);
+missile.style.position = "relative";
+missile = vaisseau.style.left;
+
+
+
+function keyPressMissile(event){ 
+    if(event.key == " "){
+        console.log("test");
+        setInterval(function(){ 
+            missile.style.top = parseInt(missile.style.top) - 1 + "px";
+        }, 10); // Fin timer 
+    }
+}// Fin keyPressMissile
