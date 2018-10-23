@@ -62,10 +62,14 @@ armee.style.position = "relative";
 armee.style.left = "0px";
 armee.style.top = "0px";
 
+var started = 0;
 
 function start() {
-    
+        if(started === 1) {
+            return false;
+        }
         setInterval(function(){ // DEPLACEMENT ==>
+            started = 1;
             if ((direction == 0) && (parseInt(armee.style.top) < 230))
             {
                 armee.style.left = parseInt(armee.style.left) + 1 + "px";
@@ -104,20 +108,36 @@ function start() {
 var missile = document.getElementById("missile");
 document.addEventListener("keydown", keyPressMissile);
 missile.style.position = "relative";
-
-
-
-
+lancementMissile = 0;
 
 function keyPressMissile(event){ 
+
     if(event.key == " "){
+        if(lancementMissile === 1) {
+            return false;
+        }
         missile.style.left = parseInt(vaisseau.style.left) + "px";
         missile.style.top = parseInt(vaisseau.style.top) + "px";
-        setInterval(function(){
-            
-            missile.style.top = parseInt(missile.style.top) - 1 + "px";
+        
+        
 
-        }, 30); // Fin timer 
+        missileTimer();
 
-    }
+        
+    }// Fin Excape
+ 
+
 }// Fin keyPressMissile
+
+var timer = setInterval(missileTimer, 5);
+
+function missileTimer() {
+            
+            if (parseInt(missile.style.top) > "-450")
+            {
+                missile.style.top = parseInt(missile.style.top) - 1 + "px";
+                
+                console.log(parseInt(missile.style.top));
+            }
+            
+        }//Fin fonction missileTimer
