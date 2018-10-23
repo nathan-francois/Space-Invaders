@@ -111,7 +111,7 @@ function keyPressMissile(event){
     if(event.key == " "){
         console.log("test");
         setInterval(function(){ 
-            missile.style.top = (parseInt(vaisseau.style.top)) - 1 + "px";
+            missile.style.top = parseInt(missile.style.top) - 1 + "px";
         }, 10); // Fin timer 
     }
 }// Fin keyPressMissile
