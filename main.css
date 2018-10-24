@@ -1,0 +1,169 @@
+#menu
+{
+    height: 600px;
+    width: 775px;
+    background-image: url(planete.gif);
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+
+h1{
+    font-family:'Fascinate Inline', cursive; 
+    font-size: 90px;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 20%;
+}
+
+#game{
+  height:150px;
+  width: 200px;
+  font-size: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  color:rgb(61, 255, 0);
+  font-family:'Fascinate Inline', cursive; 
+  border-radius: 30%;
+  letter-spacing: 5px;
+  margin-top:50px;
+  margin-left:38%;
+}
+
+#buttonstart{
+    height:50px;
+    width: 100px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color:rgb(61, 255, 0);
+    font-family:'Fascinate Inline', cursive; 
+    border-radius: 30%;
+    letter-spacing: 5px;
+    margin-top:20px;
+ 
+  }
+  
+  #buttonpause{
+    height:50px;
+    width: 100px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color:rgb(0, 255, 0);
+    font-family:'Fascinate Inline', cursive; 
+    border-radius: 30%;
+    letter-spacing: 5px;
+    margin-top:20px;
+  
+  }
+  
+
+  #menuBack{
+    height:50px;
+    width: 100px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color:rgb(0, 255, 0);
+    font-family:'Fascinate Inline', cursive; 
+    border-radius: 30%;
+    letter-spacing: 5px;
+    margin-top:20px;
+    
+  }
+      
+
+
+#fenetre
+{
+height: 650px;
+width: 840px;
+background-image: url(nuitetoile.gif);
+margin: 0 auto;
+display: none ;
+margin-top: 50px;
+
+}
+
+#score
+{
+display: flex;
+height: 50px;
+margin-left:5px;
+
+}
+
+#container
+{
+height: auto;
+width: 435px;
+
+
+
+}
+
+.alien
+{
+    
+    width: 50px ;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    
+    
+}
+
+.ligne
+{
+    display: flex;
+}
+#zone
+{
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+#killZone
+{
+ height:125px;
+ display:flex;
+
+
+}
+
+#vaisseau
+{
+    
+}
+  
+
+/* #boutonmenu
+{
+    height: 300px;
+    width: 150px;
+    background-image: url(original.gif);
+} */
+
+
+#ufo
+{
+    height : 100px;
+    width: 250px;
+    position: absolute;
+    right:25%;
+    top: 50px;
+   
+   
+
+}
+
+.missile
+{
+    background-image:url(rocket-flying1.gif);
+    display:block;
+    height: 60px;
+    width : 60px;
+    background-size:contain;
+}
