@@ -14,19 +14,19 @@ width: 605px;
 background-color: black;
 margin: 0 auto;
 display: none ;
+background-image: url(images/nuitetoile.gif);
 }
 
 #score
 {
 height: 50px;
-background-color: grey;
 }
 
 #container
 {
 height: auto;
 width: 435px;
-background-color: red;
+
 
 
 }
@@ -46,13 +46,13 @@ background-color: red;
 #zone
 {
     height: 400px;
-    background-color: yellow;
+    
     overflow-y: hidden;
 }
 
 #killZone
 {
-background-color: aqua;
+
 
 }
 
@@ -66,8 +66,8 @@ background-color: aqua;
 .missile
 {
     display:  bloc k;
-    height: 10px;
+    height: 30px;
     width: 10px;
-    background: blue;
+    background: red;
 }
 
