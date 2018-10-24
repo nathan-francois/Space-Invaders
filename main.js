@@ -94,35 +94,53 @@ function start() {
     }
     setInterval(function () { // DEPLACEMENT ==>
         started = 1;
-        if ((direction == 0) && (parseInt(armee.style.top) < 230)) {
+        if ((direction == 0) && (parseInt(armee.style.top) < 450)) {
             armee.style.left = parseInt(armee.style.left) + 1 + "px";
         }
-        if (parseInt(armee.style.left) == 170) // DIRECTION BAS
+        if (parseInt(armee.style.left) == 200) // DIRECTION BAS
         {
             direction = 1;
 
-            if (parseInt(armee.style.top) < 230) {
+            winLose ();
+
+            if (parseInt(armee.style.top) < 450) {
                 armee.style.top = parseInt(armee.style.top) + 10 + "px";
+                console.log(armee.style.top);
             }
         }
 
     }, 10); // Fin timer
 
     setInterval(function () { /* DEPLACEMENT <== */
-        if ((direction == 1) && (parseInt(armee.style.top) < 230)) {
+        if ((direction == 1) && (parseInt(armee.style.top) < 450)) {
             armee.style.left = parseInt(armee.style.left) - 1 + "px";
         }
         if (parseInt(armee.style.left) == 0)   // DEPLACEMENT BAS
         {
             direction = 0;
 
-            if (parseInt(armee.style.top) < 230) {
+            winLose ();
+
+            if (parseInt(armee.style.top) < 450) {
                 armee.style.top = parseInt(armee.style.top) + 10 + "px";
+                console.log(armee.style.top);
+                
             }
         }
     }, 10); // Fin timer
     //Fin de boucle
 }// Fin fonction start
+
+function winLose () {
+
+    if (score == 50)
+        {
+            alert("you win");
+        }
+        else if (parseInt(armee.style.top) == 200 && score < 49){
+            alert("loose"); 
+        }
+}
 
 /* ------------------------------------------------------- MISSILE ------------------------------------------------- */
 document.addEventListener("keydown", keyPressMissile);
@@ -183,6 +201,8 @@ function createMissile() {
 
 }
 
+console.log((100 + "px"));
+
 function testCollision(missile) {
     var posLeft = missile.offsetLeft;
     var posTop = missile.offsetTop;
@@ -198,6 +218,8 @@ function testCollision(missile) {
                 alien[i].style.visibility = "hidden";
                 alien[i].alienDead = 1;
                 score++;
+                
+                
             }
         }
     }

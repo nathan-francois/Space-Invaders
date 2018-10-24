@@ -78,6 +78,7 @@ width: 605px;
 margin: 50px auto;
 display: none ;
 background-image: url("images/nuitetoile.gif");
+overflow: hidden;
 }
 
 #score
@@ -95,11 +96,10 @@ width: 435px;
 
 .alien
 {
-    border: solid black;
+ 
     width: 30px ;
     height: 30px;
     margin: 5px;
-    background-color: red;
     background-size: contain;
     
 }
@@ -110,7 +110,6 @@ width: 435px;
 #zone
 {
     height: 400px;
-    overflow-y: hidden;
 }
 
 #ufo
@@ -120,6 +119,11 @@ width: 435px;
     position: relative;
     right: -285px;
     
+}
+
+#killZone
+{
+    height: 10px;
 }
 
 #vaisseau
