@@ -1,0 +1,141 @@
+#menu
+{
+    height: 500px;
+    width: 600px;
+    background-image: url(images/planete.gif);
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+
+#menuBack{
+    height:50px;
+    width: 100px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color:rgb(0, 255, 0);
+    font-family:'Fascinate Inline', cursive; 
+    border-radius: 30%;
+    letter-spacing: 5px;  
+}
+
+h1{
+    font-family:'Fascinate Inline', cursive; 
+    font-size: 90px;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+#game{
+  height:150px;
+  width: 200px;
+  font-size: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  color:rgb(61, 255, 0);
+  font-family:'Fascinate Inline', cursive; 
+  border-radius: 30%;
+  letter-spacing: 5px;
+  margin-top:40px;
+  margin-left:35%;
+}
+
+
+#buttonstart{
+    height:50px;
+    width: 100px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color:rgb(61, 255, 0);
+    font-family:'Fascinate Inline', cursive; 
+    border-radius: 30%;
+    letter-spacing: 5px;
+    
+ 
+  }
+  
+  #buttonpause{
+    height:50px;
+    width: 100px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color:rgb(0, 255, 0);
+    font-family:'Fascinate Inline', cursive; 
+    border-radius: 30%;
+    letter-spacing: 5px;
+}
+
+
+
+
+#fenetre
+{
+height: 500px;
+width: 605px;
+margin: 50px auto;
+display: none ;
+background-image: url("images/nuitetoile.gif");
+}
+
+#score
+{
+display: flex;
+height: 50px;
+margin-left:5px;
+}
+
+#container
+{
+height: auto;
+width: 435px;
+}
+
+.alien
+{
+    border: solid black;
+    width: 30px ;
+    height: 30px;
+    margin: 5px;
+    background-color: red;
+    background-size: contain;
+    
+}
+.ligne
+{
+    display: flex;
+}
+#zone
+{
+    height: 400px;
+    overflow-y: hidden;
+}
+
+#ufo
+{
+    height : 50px;
+    width: 100px;
+    position: relative;
+    right: -300px;
+    
+}
+
+#vaisseau
+{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    background:url(space-fighter2.png);
+    background-size: contain;
+}
+
+.missile
+{
+    display:  block;
+    height: 20px;
+    width: 10px;
+    background-image: url("images/rocket-flying1.gif");
+    background-size: contain;
+}
+
