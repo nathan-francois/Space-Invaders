@@ -10,24 +10,28 @@ var jeux = document.querySelector("#fenetre");
 var menu = document.querySelector("#menu");
 var displayMenu = 0;
 
+var score = 0;
 
+function score() {
+    document.getElementById("compteur").innerHTML = "SCORE : " + score;
+}
 
 function game(event) {
 
-    
-        // CACHE MENU
-        if (displayMenu == 0) {
-            jeux.style.display = "block";
-            menu.style.display = "none";
-            displayMenu = 1;
-        }
-        else if (displayMenu == 1) {
-            jeux.style.display = "none";
-            menu.style.display = "block";
-            displayMenu = 0;
-        }
 
-    
+    // CACHE MENU
+    if (displayMenu == 0) {
+        jeux.style.display = "block";
+        menu.style.display = "none";
+        displayMenu = 1;
+    }
+    else if (displayMenu == 1) {
+        jeux.style.display = "none";
+        menu.style.display = "block";
+        displayMenu = 0;
+    }
+
+
 
 }
 
@@ -101,11 +105,11 @@ function start() {
         {
             direction = 1;
 
-            winLose ();
+            winLose();
 
             if (parseInt(armee.style.top) < 450) {
                 armee.style.top = parseInt(armee.style.top) + 10 + "px";
-                console.log(armee.style.top);
+
             }
         }
 
@@ -119,33 +123,33 @@ function start() {
         {
             direction = 0;
 
-            winLose ();
+            winLose();
 
             if (parseInt(armee.style.top) < 450) {
                 armee.style.top = parseInt(armee.style.top) + 10 + "px";
-                console.log(armee.style.top);
-                
+
+
             }
         }
     }, 10); // Fin timer
     //Fin de boucle
 }// Fin fonction start
 
-function winLose () {
-
-    if (score == 50)
-        {
-            alert("you win");
-        }
-        else if (parseInt(armee.style.top) == 200 && score < 49){
-            alert("loose"); 
-        }
+function winLose() {
+    document.getElementById(win);
+    document.getElementById(over);
+    if (score == 50) {
+        win.style.display = "initial"
+    }
+    else if (parseInt(armee.style.top) == 400 && score < 49) {
+        over.style.display = "initial"
+    }
 }
 
 /* ------------------------------------------------------- MISSILE ------------------------------------------------- */
 document.addEventListener("keydown", keyPressMissile);
 var zone = document.getElementById("zone");
-var score = 0;
+
 // Temps entre chaque position du missile
 // var timer = setInterval(missileTimer, 5);
 // Fonction déplace le missile
@@ -155,7 +159,7 @@ var score = 0;
 //fonction recevant des paramètres reçu en argument
 function missileTimer(missile, timer) {
 
-    
+
 
     if (parseInt(missile.style.top) > -450) {
         missile.style.top = parseInt(missile.style.top) - 1 + "px";
@@ -207,7 +211,7 @@ function testCollision(missile) {
     var posLeft = missile.offsetLeft;
     var posTop = missile.offsetTop;
     var alienDead = 0;
-    
+
     for (var i = 0; i < alien.length; i++) {
         // Si la position Y du missile est entre le coin en haut d'un alien et le coin plus la hauteur d'un alien  
         if (alien[i].alienDead != 1 && posTop >= alien[i].offsetTop + armee.offsetTop && posTop <= alien[i].offsetTop + armee.offsetTop + 30) {
@@ -218,8 +222,8 @@ function testCollision(missile) {
                 alien[i].style.visibility = "hidden";
                 alien[i].alienDead = 1;
                 score++;
-                
-                
+                clearInterval(timer);
+                score();
             }
         }
     }

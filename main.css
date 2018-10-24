@@ -21,6 +21,16 @@
     margin: 1px 5px;
 }
 
+#win
+{
+display: none;
+}
+
+#over
+{
+display : none;
+}
+
 h1{
     font-family:'Fascinate Inline', cursive; 
     font-size: 90px;
@@ -29,6 +39,13 @@ h1{
     padding-top: 40px;
 }
 
+h2
+{
+    color: greenyellow;
+    font-size: 20px;
+    position: relative;
+    left : "50px";
+}
 
 #game{
   height:150px;
