@@ -9,7 +9,7 @@ Vague d'ennemi destructible, déplacement du vaisseau et victoire à la destruct
 
 ![Ecran d'accueil](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders.png)
 
-![En cours de partie](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders.png) 
+![En cours de partie](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders1.png) 
 
-![En cas de victoire](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders.png) 
+![En cas de victoire](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders2.png) 
 
