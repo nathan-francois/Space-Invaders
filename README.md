@@ -7,5 +7,9 @@ HTML et JavaScript, en manipulant les éléments du DOM, reproduction du jeu ré
 Vague d'ennemi destructible, déplacement du vaisseau et victoire à la destruction de tous les enemis
 
 
-![alt text](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders.png) 
+![Ecran d'accueil](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders.png)
+
+![En cours de partie](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders.png) 
+
+![En cas de victoire](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders.png) 
 
