@@ -2,7 +2,7 @@
 
 >Projet d'une durée de 3 jours en cours de formation
 
-HTML et JavaScript, en manipulant les éléments du DOM, reproduction du jeu rétro "space invaders".
+Reproduction célèbre jeu rétro, le Space Invaders!
 
 - page d'Accueil
 - vague d'ennemi destructible 
