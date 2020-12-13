@@ -4,7 +4,11 @@
 
 HTML et JavaScript, en manipulant les éléments du DOM, reproduction du jeu rétro "space invaders".
 
-Vague d'ennemi destructible, déplacement du vaisseau et victoire à la destruction de tous les enemis
+- page d'Accueil
+- vague d'ennemi destructible 
+- déplacement du vaisseau
+- victoire à la destruction de tous les enemis
+- défaite en cas de perte de toutes les vies
 
 
 ![Ecran d'accueil](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders.png)
