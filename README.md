@@ -17,4 +17,4 @@ Reproduction célèbre jeu rétro, le Space Invaders!
 
 ![En cas de victoire](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders02.png)
 
-![En cas de victoire](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders03.png) 
+![En cas de défaite](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders03.png) 
