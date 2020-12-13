@@ -1,4 +1,4 @@
-# Space invaders en JavaScript
+# Space invaders - JavaScript
 
 >Projet d'une durée de 3 jours en cours de formation
 
