@@ -11,10 +11,14 @@ Reproduction célèbre jeu rétro, le Space Invaders!
 - défaite en cas de perte de toutes les vies
 
 
+## Ecran d'Accueil
 ![Ecran d'accueil](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders00.png)
 
+## En jeu
 ![En cours de partie](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders01.png)
 
-![En cas de victoire](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders02.png)
+## Victoire!
+![En cas de victoire](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders03.png) 
 
-![En cas de défaite](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders03.png) 
+## Défaite..
+![En cas de défaite](https://raw.githubusercontent.com/JauneLoke/Space-Invaders/master/SpaceInvaders02.png)
